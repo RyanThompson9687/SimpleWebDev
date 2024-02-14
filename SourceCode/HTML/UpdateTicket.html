@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Ticket System</title>
+        <script type="text/javascript" src="js/ProjectCode.js"></script>
+        <link href="css/styles.css" rel="stylesheet">	
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Update Ticket</h1>
+
+        <div id="loginDiv">
+            <p id="Ticket_ID" style="display: none;"></p>
+            <h3 id="Department"></h3>
+            <p id="Description"></p>
+            <label for="Status">Status:</label>
+            <p id="StatusText" style="display: block;"></p>
+            <select name="Status" id="Dropdown" style="display: none;">
+                <option value="Submitted">Submitted</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Requires Follow-Up">Requires Follow-Up</option>
+                <option value="Complete">Complete</option>
+            </select>
+
+            <p id="Changelog"></p>
+            <span id="inner-title">Update Message:</span>
+            <input type="text" id="Update" placeholder="Update" /><br />
+            <button type="button" id="loginButton" class="buttons" onclick="updateTicketAdmin()">Update Ticket</button>
+            <button type="button" id="HomePageButton" class="buttons" onclick="location.href='HomePage.html'">Back to Home Page</button>
+            <h3 id="ticketResult"></h3>
+        </div>
+    </body>
+</html>

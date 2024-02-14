@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Ticket System</title>
+        <script type="text/javascript" src="js/ProjectCode.js"></script>
+        <link href="css/styles.css" rel="stylesheet">	
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1 id="title">Ticket System</h1>
+
+        <div id="loginDiv">
+            <span id="inner-title">SIGN UP</span>
+            <input type="text" id="Name" placeholder="Name" /><br />
+            <input type="text" id="Email" placeholder="Email Address" /><br />
+            <input type="password" id="Password" placeholder="Password"/><br />
+            <input type="password" id="Confirm Password" placeholder="Retype Password"/><br />
+            <label for="Account Types">Choose Account Type:</label>
+            <select name="Account Types" id="Dropdown">
+                <option value="Basic">Basic</option>
+                <option value="Admin">Admin</option>
+            </select>
+            <button type="button" id="signUpButton" class="buttons" onclick="doRegister();">Sign Up</button>
+            <button type="button" id="loginButton" class="buttons" onclick="location.href='index.html'">Back to Login</button>
+            <h3 id="loginResult"></h3>
+        </div>
+
+    </body>
+</html>

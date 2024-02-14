@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Ticket System</title>
+        <script type="text/javascript" src="js/ProjectCode.js"></script>
+        <link href="css/styles.css" rel="stylesheet">	
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Create Ticket</h1>
+
+        <div id="loginDiv">
+            <label for="Department">Choose Department:</label>
+            <select name="Department" id="Dropdown">
+                <option value="IT Help Desk">IT Help Desk</option>
+                <option value="Financial Aid">Financial Aid</option>
+                <option value="Registrar">Registrar</option>
+                <option value="Student Living/Housing">Student Living/Housing</option>
+            </select>
+
+            <span id="inner-title">Describe The Issue:</span>
+            <input type="text" id="Description" placeholder="Description" /><br />
+            <button type="button" id="loginButton" class="buttons" onclick="submitTicket()">Submit Ticket</button>
+            <button type="button" id="HomePageButton" class="buttons" onclick="location.href='HomePage.html'">Back to Home Page</button>
+            <h3 id="ticketResult"></h3>
+        </div>
+    </body>
+</html>

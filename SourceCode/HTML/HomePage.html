@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Ticket System</title>
+	    <script type="text/javascript" src="js/ProjectCode.js"></script>
+        <link href="css/styles.css" rel="stylesheet">	
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1 id="title">Welcome to the Help Desk Ticket System</h1>
+
+        <div id="HomePage">
+            <button type="button" id="loginButton" class="button" onclick="location.href='AddTicket.html'">Add Ticket</button>
+            
+            <button type="button" id="loginButton" class="button" onclick="doLogout();">Logout</button>
+
+            <h2 id="DepartmentFilter">Filter Tickets</h2>
+                <div id="FilterBox">
+                    <div>
+                        <label for="Department">Filter By Department:</label>
+                    </div>
+                    <div class="DropdownDiv">
+                        <select name="Department" id="DropdownDepartment" class="HomePageDropdown">
+                            <option value=""></option>
+                            <option value="IT Help Desk">IT Help Desk</option>
+                            <option value="Financial Aid">Financial Aid</option>
+                            <option value="Registrar">Registrar</option>
+                            <option value="Student Living/Housing">Student Living/Housing</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="StatusFilter">Filter By Status:</label>
+                    </div>
+                    <div class="DropdownDiv">
+                        <select name="Status" id="DropdownStatus" class="HomePageDropdown">
+                            <option value=""></option>
+                            <option value="Submitted">Submitted</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Requires Follow-Up">Requires Follow-Up</option>
+                            <option value="Complete">Complete</option>
+                        </select>
+                    </div>
+                </div>
+            <button type="button" id="loginButton" class="button" onclick="doFilter();">Filter</button>
+
+            <div id="TicketDisplay">
+                <span id="inner-title">Submitted Tickets</span>
+
+                <div id="Tickets">
+                    <div id="loadResult"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
