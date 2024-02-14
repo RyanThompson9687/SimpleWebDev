@@ -14,9 +14,10 @@ When logged in, a user can view, create, and update tickets.
 Each ticket is tagged to a specific department, has a status (submitted, in progress, requires follow-up, complete), and a description. 
 A changelog is kept for each ticket, showing responses added by admin and basic users during the progress of the ticket.  
 
-The software is a web-based application, accessed through a browser with internet access. The domain name is http://tempname.online
-The software is built on a LAMP stack: using a Linux (Ubuntu 20.04) operating system,an Apache web server, a MySQL database, and the PHP programming language. 
-The LAMP stack is hosted by Digital Ocean, and the domain name purchased through Name.com
+The software was a web-based application, accessed through a browser with internet access. The domain name was http://tempname.online
+This domain is now inactive, however all source code can be found in this repository.
+The software was built on a LAMP stack: using a Linux (Ubuntu 20.04) operating system, an Apache web server, a MySQL database, and the PHP programming language. 
+The LAMP stack was hosted by Digital Ocean, and the domain name purchased through Name.com.
 Visual Studio Code was used for all writing and editing of source code.
 
 Programming languages used in the source code include PHP, JavaScript, HTML, and CSS.
